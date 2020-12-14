@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leon Blanco</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"> <!_v incula css_>
+    <link href="https://file.myfontastic.com/39xAwbxwHACm4ijLmUizF4/icons.css" rel="stylesheet">
+</head>
+    
+    
+<body>
+    <header class="main-header">
+      <div class="container container--flex"> 
+       
+        </div>
+      
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+           <span class="icon-menu" id="btnmenu"></span>
+           <ul class="menu" id="menu">
+               <li class="menu__item"><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+               <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+               <li class="menu__item"><a href="indumentaria.html" class="menu__link">Indumentaria</a></li>
+               <li class="menu__item"><a href="escolar.html" class="menu__link">Escolar</a></li>
+               <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+           </ul> 
+           <div class="social-icon">
+           <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+           <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+           <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+             </div>
+        </div>
+    </nav>
+    
+    <section class="banner">
+
+        <img src="img/simple_leon.jpg" alt="" 
+        class="banner__img">
+
+        <div class="banner__content">LEON BLANCO</div>
+    </section>
+    
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Indumentaria para hombres mujeres y niños</h2>
+                <h2 class= "main__title">Uniformes escolares y de trabajo</h2>
+                <p class="main__txt">Bla Bla</p>
+            </div>
+        </section>
+        
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/cbell.jpg" style="width:100%" class="img_banner">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/galeriax.jpg" style="width:100%" class="img_banner">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/remera city Bell.jpeg" style="width:100%" class="img_banner">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+        
+    </main>
+    
+    <footer class="main-footer">
+          <div class="container container--flex">
+ 
+                <div class="column column--33">
+                    <h2 class="column__title">Contacto</h2>
+                    <p class="column__txt"><span class="icon-telefono">221 480 0906</span></p>
+                    <p class="column__txt"> <span class="icon-ubicacion">Plaza Belgrano Nº13, City Bell</span></p>
+
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Redes Sociales</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p>
+                </div>
+                
+            </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    
+</body>
+</html>
