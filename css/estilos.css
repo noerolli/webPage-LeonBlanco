@@ -9,13 +9,13 @@ body {
 }
 
 /*----------estilos base.............*/
-
+/*
 img {
     display: block;
     width: 50%;
     max-width: 50%;
 }
-
+*/
 h1,h2, h3, h4, h5, h6 {
     margin:0;
 }
@@ -23,6 +23,7 @@ h1,h2, h3, h4, h5, h6 {
 .container {
     width: 100%;
     margin:auto;
+
 }
 
 .container--flex {
@@ -99,7 +100,6 @@ h1,h2, h3, h4, h5, h6 {
 
 .social-icon [class*="icon"]{
     color: black;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,6 +108,9 @@ h1,h2, h3, h4, h5, h6 {
     height: 35px;
     background: white;
     border-radius: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 .social-icon__link {
@@ -137,49 +140,57 @@ h1,h2, h3, h4, h5, h6 {
 }
 
 .menu__link:hover {
-    background: gray;
+    background-color: brown ;
 }
 
 .menu__link--select {
-    background: gray;
-    
+color: burlywood;    
 }
 
 .mostrar {
     height: 650px;
 }
 
+.leon_blanco{
+    color:white;
+    font-size: larger;
+    font-family: Georgia;
+}
 /*----------estilo banner-----*/
-
 
 .banner {
     margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
     position: relative;
     align-items: center;
+    justify-content: space-around;
+    height: 100%;
     z-index: -1000;
+    display: flex;
+
 }
 
-.banner:before {
+.banner:b efore {
+
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.3);
     z-index: 1000;
     top: 0;
+    display: flex;
+
 }
 
 .banner__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
+    max-width: 350px;
 }
 
 .banner__content {
-    width: 90%;
     color: white;
-    position: absolute;
+    position: relative;
     text-align: center;
     z-index: 1500;
     top: 50%;
@@ -188,17 +199,35 @@ h1,h2, h3, h4, h5, h6 {
     font-size: 10px;
 }
 
+@font-face{
+    font-family: "LobsterTwo";
+    src: url(lobster-two-v13-latin-regular.woff);
+}
+.lb_banner{
+    font-family: "LobsterTwo";
+    font-weight: 400;
+    color: rgb(41, 40, 40);
+    font-size: 70px;
+    position: relative;
+    align-self: center;
+}
 
+.lb_banner_left{
 
+}
 
+.lb_banner_right{
+
+}
 /*--------estilos ppales------*/
 
 
 .group--color .container{
-    background: grey;
+    background: rgb(134, 185, 160);
     color:white;
     padding: 10px;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .main__title{
@@ -210,6 +239,10 @@ h1,h2, h3, h4, h5, h6 {
 
 .column__title{
     font-size: 1.3em;
+}
+
+.main__title2 {
+    font-size: 100%;
 }
 
 .main__about__description .column:nth_child(2) {
@@ -251,6 +284,9 @@ h1,h2, h3, h4, h5, h6 {
     
 }
 
+.group__title {
+    margin-left: 10px;
+}
 /*--------esetilos responsive-----*/
 
 @media screen and (min-width:480px) {
@@ -290,19 +326,16 @@ h1,h2, h3, h4, h5, h6 {
     box-sizing: border-box
 }
 
-
-.mySlides {
-    display: none
-}
-
+/*
 img {
     vertical-align: middle;
 }
+*/
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 3300px;
+  position:relative;
   margin: auto;
 }
 
@@ -392,6 +425,23 @@ img {
 }
 
 
+/*carousel*/
 
+.next{
+background-color: black;
+}
 
+.prev{
+    background-color: black;
+    }
+
+.mySlides{
+    width: 100%;
+}
+
+.img_carousel{
+     display: block;
+    width: 100%;
+    max-height: 400px;
+}
 

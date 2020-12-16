@@ -10,11 +10,27 @@ body {
 
 /*----------estilos base.............*/
 
-img {
-    display: block;
-    width: 50%;
-    max-width: 50%;
+div.title{
+    text-align: center;
+    margin: 25px;
 }
+
+.img_galery {
+    position:relative;
+    margin-top: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.img_container {
+    height: 250px;
+    width:  350px;
+    background-size: cover;
+}
+
 
 h1,h2, h3, h4, h5, h6 {
     margin:0;
@@ -30,7 +46,6 @@ h1,h2, h3, h4, h5, h6 {
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .column {
@@ -74,7 +89,7 @@ h1,h2, h3, h4, h5, h6 {
 
 .main-nav {
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index: 2000;
     padding: 10px;
 }
@@ -100,7 +115,6 @@ h1,h2, h3, h4, h5, h6 {
 
 .social-icon [class*="icon"]{
     color: black;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +123,11 @@ h1,h2, h3, h4, h5, h6 {
     height: 35px;
     background: white;
     border-radius: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
+
 
 .social-icon__link {
     text-decoration: none;
